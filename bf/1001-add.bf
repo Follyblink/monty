@@ -1,13 +1,8 @@
-+++++ +++++		#cell0: 10
-[
->++++ ++++		#cell1: 10 x 8 = 80
->+++++ +++++		#cell2: 10 x 10 = 100
->+++++ ++++++		#cell3: 10 x 11 = 110
-<<<-			#back to cell0 and decrement
-]
->+++.			#ASCII: 83 = "S"
->-.			#ASCII: 99 = "c"
-+++++.			#ASCII: 104 = "h"
->+..			#ASCII: 111 = "oo"
----.			#ASCII: 108 = "l"
->[-]+++++ +++++.	#ASCII:  10 = "\n"
+read num (ascii - 48) into block #1
+>,-----------------------------------------------
+read num (ascii - 48 ('0')) into block #2
+>,-----------------------------------------------
+[<<+>>-] add block #2 to block #0
+<[<+>-] add block #1 to block #0
+<++++++++++++++++++++++++++++++++++++++++++++++++
+. print contents of block #0
